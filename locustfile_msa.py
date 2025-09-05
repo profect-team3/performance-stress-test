@@ -149,7 +149,7 @@ class CustomerWorkflow(SequentialTaskSet):
 class OwnerWorkflow(SequentialTaskSet):
     def on_start(self):
         self.store_id = None  # 생성한 가게 ID 저장
-
+        self.menu_id = "202943ac-7a28-4909-acce-e2f86c2eb5a2"
     @task
     def create_store(self):
         payload = {
